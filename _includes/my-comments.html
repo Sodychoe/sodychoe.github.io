@@ -8,8 +8,31 @@
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="bottom"
-        data-theme="noborder_gray"
         data-lang="ko"
         crossorigin="anonymous"
         async>
+</script>
+
+<script>
+  function setGiscusTheme(isDarkMode) {
+    const giscusTheme = isDarkMode ? 'dark' : 'light';
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (iframe) {
+      iframe.contentWindow.postMessage({
+        giscus: {
+          setConfig: {
+            theme: giscusTheme
+          }
+        }
+      }, 'https://giscus.app');
+    }
+  }
+
+  // Initial theme set based on current body class
+  setGiscusTheme(document.body.classList.contains('dark-mode'));
+
+  // Listen for Hydejack's custom dark mode toggle event
+  window.addEventListener('hydejack-dark-mode-toggle', (event) => {
+    setGiscusTheme(event.detail);
+  });
 </script>
