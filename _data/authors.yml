@@ -2,17 +2,19 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              <firstname> <lastname>
-  email:             <mail@domain.tld>
+  name:              sodychoe
+  email:             sodychoe@icloud.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    
-    Open `_data/authors.yml` to edit this text.
+  about:             |  
+    주니어 벡앤드 개발자 입니다.  
+    컴퓨터 과학(CS) 이론들을 공부하고 정리하거나   
+    프로젝트를 하면서 고민하고 해결한 과정을 기록하고 있습니다.  
+
+      
+    궁금한 부분이 있다면 댓글이나 메일로 연락주세요😊
+
 
   # This photo will be used in the about section
   picture:
@@ -27,9 +29,9 @@ author1:
   # Rearrange to change the order in which they appear
   # You can also provide an absolute URL (starting with https://) instead of usernames
   social:
-    twitter:         <username>
-    github:          <username>
-    # email:           <mail@domain.tld>
+    # twitter:         <username>
+    github:          https://github.com/Sodychoe
+    email:           sodychoe@icloud.com
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
